@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shinkann.css">
+  <title>じゃんけん</title>
+</head>
+<body>
+  <h1>じゃんけん</h1>
+  <hr>
+  <table id="maintable">
+    <tr>
+    <th class="hand"><div id="ahand"></div></th>
+    <th>VS</th>
+    <th class="hand"><div id="bhand"></div></th>
+    </tr>
+    <tr>
+    <th>相手</th>
+    <td>&nbsp;</td>
+    <th>自分</th>
+    </tr>
+    <tr>
+    <th colspan="3">&nbsp;</th>
+    </tr>
+    <tr>
+    <th colspan="3">
+      <form name="janken">
+        <table id="subtable">
+          <tr class="background-color-white">
+            <td colspan="3"><div id="message"></div></td>
+          </tr>
+          <tr>
+            <th>
+              <input type="button" onclick="getbhand(0)" value="グー" class="jankennbutton">
+            </th>
+            <th>
+              <input type="button" onclick="getbhand(1)" value="チョキ" class="jankennbutton">
+            </th>
+            <th>
+              <input type="button" onclick="getbhand(2)" value="パー" class="jankennbutton">
+            </th>
+          </tr>
+          <tr>
+            <th colspan="3"><input type="button" onClick="handreset()" value="リセット" class="jankennbutton"></th>
+          </tr>
+        </table>
+      </form>
+    </th>
+    </tr>
+  </table>
+</body>
+<script type="text/javascript" src="shinkann.js"></script>
+</html>

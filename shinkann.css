@@ -1,0 +1,21 @@
+#maintable{
+  border: 0;
+  align: center;
+}
+#subtable{
+  border: 0;
+  text-align: center;
+}
+.hand{
+  width: 200px;
+  height: 200px;
+}
+.jankennbutton{
+  font-size: 20px;
+}
+.background-color-white{
+  background-color: #000000;
+}
+#message{
+  color: #FFFFFF;
+}
