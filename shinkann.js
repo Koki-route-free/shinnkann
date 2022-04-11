@@ -1,11 +1,11 @@
 hand = new Array("img/M-j_gu01.png","img/M-j_ch01.png","img/M-j_pa01.png");
 
-msg = new Array("なにをだそうかなん","勝ちだよん","まけだよん","あいこだよん");
+msg = new Array("なにをだそうかなん","勝ちだよん","まけだよん","あいこで");
 
 timer = 0;
 count = 0;
 
-handreset();
+handreset(0);
 
 function getbhand(btn) {
   clearTimeout(timer);
@@ -30,15 +30,18 @@ function getbhand(btn) {
   if (btn == 2 && r == 0) num = 1;
   if (btn == 2 && r == 1) num = 2;
   //表示
+  if(r==btn){
+    handreset(3);
+  }
   document.getElementById("message").innerHTML = msg[num];
 }
 
-function handreset() {
+function handreset(num) {
   document.janken.elements[0].disabled = false;
   document.janken.elements[1].disabled = false;
   document.janken.elements[2].disabled = false;
   document.janken.elements[3].disabled = true;
-  document.getElementById("message").innerHTML = msg[0];
+  document.getElementById("message").innerHTML = msg[num];
   getahand()
 }
 
