@@ -1,21 +1,35 @@
+body{
+  font-size: large;
+}
 #maintable{
   border: 0;
-  align: center;
+  text-align: center;
+}
+img{
+  width: 300px;
+  height: 300px;
 }
 #subtable{
   border: 0;
   text-align: center;
 }
+.name{
+  font-size: 30px;
+}
 .hand{
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 .jankennbutton{
-  font-size: 20px;
+  font-size: 30px;
 }
 .background-color-white{
   background-color: #000000;
 }
 #message{
   color: #FFFFFF;
+  font-size: 30px;
+}
+#jankenslack{
+  margin-left: 250px;
 }
